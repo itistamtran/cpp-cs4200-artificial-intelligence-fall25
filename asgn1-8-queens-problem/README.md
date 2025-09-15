@@ -30,19 +30,17 @@ Both implementations include step-by-step visualizations to show how the solutio
 ## How to Run
 
 ### Python (GUI)
-1. Navigate to the assignment folder:
 ```bash
+# 1. Navigate to the assignment folder:
 cd asgn1-8-queens-problem
 
-2. Run the GUI:
-```bash
+# 2. Run the GUI:
 python -m src.gui.app
 
-3. Web (Browser)
-```bash
+# 3. Web (Browser)
 cd asgn1-8-queens-problem/web   # Go to the web/ folder
 python -m http.server 8000      # Start a local server
 
-- Open in browser: 
-http://localhost:8000/index.html
+# Open in browser:
+# http://localhost:8000/index.html
     
