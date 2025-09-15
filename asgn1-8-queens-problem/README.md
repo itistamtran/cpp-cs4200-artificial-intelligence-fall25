@@ -3,7 +3,7 @@
 This assignment is part of **CS 4200: Artificial Intelligence (Fall 2025)** at  
 **California State Polytechnic University, Pomona (CPP).**
 
-[Live Demo - Assignment 1](https://github.com/itistamtran/cpp-cs4200-artificial-intelligence-fall25/asgn1-8-queens-problem/web/)
+[Live Demo - Assignment 1](https://itistamtran.github.io/cpp-cs4200-artificial-intelligence-fall25/asgn1-8-queens-problem/web/index.html)
 
 ## Overview
 1. Write a GUI-based program that can place 8 queens in such a manner on an 8×8 chessboard that no queens attack each other.
@@ -31,22 +31,18 @@ Both implementations include step-by-step visualizations to show how the solutio
 
 ### Python (GUI)
 1. Navigate to the assignment folder:
-   ```bash
-   cd asgn1-8-queens-problem
+```bash
+cd asgn1-8-queens-problem
 
 2. Run the GUI:
-    ```bash
-    python -m src.gui.app
+```bash
+python -m src.gui.app
 
 3. Web (Browser)
-    Go to the web/ folder:
-        ```bash
-        cd asgn1-8-queens-problem/web
+```bash
+cd asgn1-8-queens-problem/web   # Go to the web/ folder
+python -m http.server 8000      # Start a local server
 
-    Start a local server:
-        ```bash
-        python -m http.server 8000
-    
-    Open in browser:
-    http://localhost:8000/index.html
+- Open in browser: 
+http://localhost:8000/index.html
     

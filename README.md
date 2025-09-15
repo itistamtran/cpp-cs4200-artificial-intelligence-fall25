@@ -2,9 +2,12 @@
 
 This repository contains my assignments for **CS 4200: Artificial Intelligence (Fall 2025)** at  **California State Polytechnic University, Pomona (CPP).**
 
+## Live Demos
+[General Demo Hub (All Assignments)](https://itistamtran.github.io/cpp-cs4200-artificial-intelligence-fall25/index.html)
+
 ## Overview
 - Each assignment folder includes:
-  - A **Python implementation** (run locally with `python -m src.gui.app` or similar entry points).
+  - A **Python implementation** (run locally with `python -m src.gui.app`).
   - A **web-based demo** for interactive visualization.
 - Algorithms explored include heuristic search, A* search, backtracking, and more.
 
@@ -13,7 +16,7 @@ The course is taught by **Professor Hussain Zaidi**,  Chief Solution Architect a
 
 ## Assignments
 - **Assignment 1:** 8 Queens Problem (Heuristic Function, A* Search, Backtracking)  
-  - [Web Demo](./asgn1-8-queens-problem/web/index.html)
+  - [Web Demo](https://itistamtran.github.io/cpp-cs4200-artificial-intelligence-fall25/asgn1-8-queens-problem/web/index.html)
   - Python version in `src/`
 - **Assignment 2:** Coming soon
 - **Assignment 3:** Coming soon
