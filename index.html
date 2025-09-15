@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CS4200 - Artificial Intelligence</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            background: #fafafa;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #871d38
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #e63d68;
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 7px 18px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        /* GitHub button */
+        .github-btn {
+            background-color: #333;
+            color: white;
+        }
+
+        .github-btn:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        /* LinkedIn button */
+        .linkedin-btn {
+            background-color: #0077b5;
+            color: white;
+        }
+
+        .linkedin-btn:hover {
+            background-color: #005983;
+            transform: scale(1.05);
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+
+            /* for hover animation */
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            /* makes the card 5% bigger */
+            box-shadow: 0 6px 16px rgb(228, 124, 124);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #ff4f7b;
+        }
+
+        .card .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #ff4f7b, #f78c9e);
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card .btn:hover {
+            background: linear-gradient(135deg, #f78c9e, #ff4f7b);
+        }
+
+        .note {
+            margin-top: 0.5rem;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CS4200 - Artificial Intelligence Assignments</h1>
+    <p>Hello! I'm <a href="https://tamtran.vercel.app/" target="_blank">Tam Tran</a>. This site contains my Artificial
+        Intelligence course assignments from Fall 2025 at California State Polytechnic University, Pomona (CPP). Each
+        card links to a web-based demo that illustrates the concepts covered in class. To run the web demos locally,
+        clone the repository and follow the instructions in each assignment folder.
+        The course is instructed by <a href="https://www.linkedin.com/in/hzaidi/" target="_blank">Professor Hussain
+            Zaidi</a>,
+        Chief Solution Architect at Business Solution Partners. </p>
+    <button class="github-btn"
+        onclick="window.location.href = 'https://github.com/itistamtran/cpp-cs4200-artificial-intelligence-fall25'">View
+        GitHub Repository</button>
+    <button class="linkedin-btn" onclick="window.location.href = 'https://www.linkedin.com/in/tamtran-/'">Connect on
+        LinkedIn</button>
+
+    <p class="note">* More assignments will be added as they are completed.</p>
+    <div class="card-grid">
+        <!-- Assignment 1 -->
+        <div class="card">
+            <h2>Assignment 1</h2>
+            <p><strong>8 Queens Problem</strong></p>
+            <a href="asgn1-8-queens-problem/web/index.html" class="btn">Try Web Demo</a>
+        </div>
+
+        <!-- Assignment 2 -->
+        <div class="card">
+            <h2>Assignment 2</h2>
+            <p><em>Coming Soon</em></p>
+        </div>
+
+        <!-- Assignment 3 -->
+        <div class="card">
+            <h2>Assignment 3</h2>
+            <p><em>Coming Soon</em></p>
+        </div>
+    </div>
+</body>
+
+</html>

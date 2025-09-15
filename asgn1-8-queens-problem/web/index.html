@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>8-Queens, A* vs Backtracking</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>8-Queens, A* vs Backtracking</h1>
+
+        <div class="toolbar">
+            <div class="seg" role="tablist" aria-label="Solver">
+                <input type="radio" name="solver" id="solver-astar" checked>
+                <label for="solver-astar">A* Search</label>
+                <input type="radio" name="solver" id="solver-back">
+                <label for="solver-back">Backtracking</label>
+            </div>
+
+            <label class="inline"><input id="toggleTrace" type="checkbox"> Show detailed steps</label>
+
+            <div class="spacer"></div>
+
+            <button id="btnBack">Back</button>
+            <button id="btnNext">Next</button>
+            <button id="btnPlay">Play</button>
+            <button id="btnClear">Clear</button>
+            <button id="btnRun">Run</button>
+            <button id="btnRestart">Restart</button>
+
+            <div class="spacer"></div>
+
+            <label class="inline">Speed
+                <input id="speed" type="range" min="50" max="1200" step="50" value="150">
+                <span id="speedLabel" class="speed-label">150 ms</span>
+            </label>
+        </div>
+
+        <div class="grid">
+            <!-- LEFT: state panel, hidden on small screens -->
+            <div class="panel state">
+                <div id="statePanel"></div>
+            </div>
+
+            <!-- CENTER: board -->
+            <div class="panel board-wrap" id="boardWrap">
+                <canvas id="board" width="600" height="600"></canvas>
+            </div>
+
+            <!-- RIGHT: info -->
+            <div class="panel">
+                <div id="info" class="info"></div>
+                <div id="subinfo" class="kv"></div>
+                <div class="legend">
+                    <span>Click Next to watch the solution step by step, or Play to run it automatically.</span>
+                    <span>Use the Speed slider to control how fast the solution runs.</span>
+                    <span><span class="dot pink"></span>Active row</span>
+                    <span><span class="redb"></span>Try or conflict position</span>
+                </div>
+                <div class="kv row">
+                    <button id="btnCheck">Check Answer</button>
+                    <span id="checkMsg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
