@@ -1,9 +1,6 @@
 # Assignment 1 - 8 Queens Problem  
 
-This assignment is part of **CS 4200: Artificial Intelligence (Fall 2025)** at  
-**California State Polytechnic University, Pomona (CPP).**
-
-[Live Demo - Assignment 1](https://itistamtran.github.io/cpp-cs4200-artificial-intelligence-fall25/asgn1-8-queens-problem/web/index.html)
+This assignment is part of **CS 4200: Artificial Intelligence (Fall 2025)** at **California State Polytechnic University, Pomona (CPP).**
 
 ## Overview
 1. Write a GUI-based program that can place 8 queens in such a manner on an 8×8 chessboard that no queens attack each other.
@@ -11,6 +8,12 @@ This assignment is part of **CS 4200: Artificial Intelligence (Fall 2025)** at
    The goal state is one where no queens are attacking each other.  
    *Note: A pair of queens is considered "attacking" if they are in the same row, same column, or on the same diagonal.*
 
+[Demo Video](assets/icons/8_queens_visualization.mp4)
+  A short recorded walkthrough showing how the 8-Queens visualization works.
+
+[Live Web Demo - Assignment 1](https://itistamtran.github.io/cpp-cs4200-artificial-intelligence-fall25/asgn1-8-queens-problem/web/index.html)
+  Try the visualization directly in your browser (interactive).
+  
 In this assignment, I implemented two approaches to solve the problem:
 
 - **A\* Search** (with heuristic function based on attacking pairs).  
