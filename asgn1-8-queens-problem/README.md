@@ -8,7 +8,9 @@ This assignment is part of **CS 4200: Artificial Intelligence (Fall 2025)** at *
    The goal state is one where no queens are attacking each other.  
    *Note: A pair of queens is considered "attacking" if they are in the same row, same column, or on the same diagonal.*
 
-![Demo Preview](assets/icons/demo.gif)
+<div align="center">
+![Demo Video](assets/icons/demo.gif)
+</div>
 
 [Live Web Demo - Assignment 1](https://itistamtran.github.io/cpp-cs4200-artificial-intelligence-fall25/asgn1-8-queens-problem/web/index.html)
   Try the visualization directly in your browser (interactive).
