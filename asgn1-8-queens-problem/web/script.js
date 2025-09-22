@@ -257,7 +257,7 @@ function renderStateSidebar(boardState, activeRow) {
     let html = '<pre>';
     for (let r = 0; r < N; r++) {
         const v = boardState[r];
-        const value = (v >= 0) ? String(v) : '·';
+        const value = (v >= 0) ? String(v) : '-';
         const cls = (activeRow === r) ? 'rowline active' : 'rowline';
         const valCls = (v >= 0) ? '' : 'unset';
         html += `<div class="${cls}"><span>queens[${r}]:</span> <span class="${valCls}">${value}</span></div>`;
@@ -339,7 +339,7 @@ function draw() {
     }
     ctx.restore();
 
-    // red square outline around conflicting queens in Edit mode
+    // square outline around conflicting queens in Edit mode
     if (mode === 'edit' && conflictRows.size) {
         ctx.save();
         ctx.strokeStyle = '#c9145cff';
