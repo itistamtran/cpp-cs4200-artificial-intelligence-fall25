@@ -26,5 +26,5 @@ The course is taught by **Professor Hussain Zaidi**,  Chief Solution Architect a
 ### How to Run Locally
 Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/cpp-cs4200-artificial-intelligence-fall25.git
+   git clone https://github.com/itistamtran/cpp-cs4200-artificial-intelligence-fall25.git
    cd cpp-cs4200-artificial-intelligence-fall25
