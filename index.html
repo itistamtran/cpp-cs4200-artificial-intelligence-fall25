@@ -6,28 +6,40 @@
     <title>CS4200 - Artificial Intelligence</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
-        margin: 2rem;
-        background: url("4200-background.png") no-repeat center center fixed;
+        font-family: "Special Elite", "Courier New", Courier, monospace;
+        margin: 3rem;
+        background: url("4200-background.png") no-repeat center center fixed,
+          #eaeaea;
         background-size: cover;
-        color: #333;
+        color: #eaeaea;
+      }
+      /* Dark overlay with 10% opacity */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* black with 90% opacity */
+        z-index: -1;
       }
 
       h1 {
         text-align: center;
         margin-bottom: 1rem;
-        color: #7f2e72;
+        color: #fce4fa;
       }
 
       a {
         text-decoration: none;
-        color: #000000;
+        color: #d1d1d1;
         font-weight: bold;
         transition: color 0.2s ease;
       }
 
       a:hover {
-        color: #e63d68;
+        color: #fce4fa;
       }
 
       button {
@@ -43,13 +55,14 @@
 
       /* GitHub button */
       .github-btn {
-        background-color: #333;
-        color: white;
+        background-color: #a9a9a9;
+        color: rgb(0, 0, 0);
       }
 
       .github-btn:hover {
         background-color: #555;
         transform: scale(1.05);
+        color: white;
       }
 
       /* LinkedIn button */
@@ -65,14 +78,15 @@
 
       .card-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 1.5rem;
         margin-top: 2rem;
       }
 
       .card {
-        background: white;
+        background: transparent
         border-radius: 10px;
+        border: 1px solid #fce4fa;
         padding: 1.5rem;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
@@ -84,12 +98,12 @@
       .card:hover {
         transform: scale(1.05);
         /* makes the card 5% bigger */
-        box-shadow: 0 6px 16px rgb(228, 124, 124);
+        box-shadow: 0 6px 16px rgb(252, 228, 250);
       }
 
       .card h2 {
         margin-top: 0;
-        color: #e56dda;
+        color: #fce4fa;
       }
 
       .card .btn {
@@ -110,7 +124,7 @@
       .note {
         margin-top: 0.5rem;
         font-size: 0.9em;
-        color: #666;
+        color: #b2b0b0;
       }
     </style>
   </head>
@@ -156,12 +170,13 @@
       <!-- Assignment 2 -->
       <div class="card">
         <h2>Assignment 2</h2>
-        <p><em>Coming Soon</em></p>
+        <p><strong>Chess Game</strong></p>
+        <a href="asgn2-chess-game/web/index.html" class="btn">Try Web Demo</a>
       </div>
 
-      <!-- Assignment 3 -->
+      <!-- Final Project -->
       <div class="card">
-        <h2>Assignment 3</h2>
+        <h2>Final Project</h2>
         <p><em>Coming Soon</em></p>
       </div>
     </div>
