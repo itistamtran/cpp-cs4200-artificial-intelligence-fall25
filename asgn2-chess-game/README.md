@@ -6,7 +6,7 @@ This project trains a Convolutional Neural Network (CNN) to evaluate chess posit
 
 ## Overview
 
-The goal of this project is to replace traditional chess engines handcrafted evaluation functions with a learned model that predicts position strength directly from board state representations.
+The goal of this project is to replace the handcrafted evaluation functions of traditional chess engines with a neural network that learns to predict position strength directly from the board state.
 
 - **Input:** Chess board state in FEN format
 - **Output:** Evaluation score (normalized and in centipawns)
@@ -66,16 +66,18 @@ Model structure:
 - Conv Block 3: 256 filters, (3×3), Dropout
 - Dense Layers: 256 → 128 → 1 output neuron with tanh activation
 
-Optimizer: AdamW (lr=3e-4, weight_decay=1e-6)
-Loss Function: MSE
-Metric: MSE and RMSE (converted to centipawns)
+  ```bash
+  Optimizer: AdamW (lr=3e-4, weight_decay=1e-6)
+  Loss Function: MSE
+  Metric: MSE and RMSE (converted to centipawns)
+  ```
 
 ---
 
 ## Model Training
 
-Epochs: 200
-Batch Size: 256
+Epochs: 200.  
+Batch Size: 256.
 Callbacks:
 
 - EarlyStopping (patience=25)
@@ -105,10 +107,12 @@ Callbacks:
 
 The trained model is integrated into a playable chess app that supports human vs AI gameplay with adjustable difficulty.
 
+### Example Interface
+
 ![Chess Application Screenshot](images/chess_app.png)
 
 ## Files
 
-chess_minimax_ml.ipynb — Main notebook for preprocessing, training, and evaluation
-ml_chess_eval.keras — Trained model file
-README.md — Project documentation
+- `chess_minimax_ml.ipynb` — Main notebook for preprocessing, training, and evaluation
+- `ml_chess_eval.keras` — Trained model file
+- `README.md` — Project documentation
