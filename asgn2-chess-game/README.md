@@ -115,6 +115,9 @@ Callbacks:
 
 ## Files
 
+- `web/` — Web version of the chess game (playable in browser), includes TensorFlow.js model files (`model.json` and weight shards)
+- `ml_chess_eval_savedmodel/` — TensorFlow SavedModel directory containing the trained model (`saved_model.pb`, `variables/`; `assets/` folder is empty)
 - `chess_minimax_ml.ipynb` — Main notebook for preprocessing, training, and evaluation
-- `ml_chess_eval.keras` — Trained model file
+- `ml_chess_eval_full.keras` — Trained neural network model (modern Keras format)
+- `ml_chess_eval_full.h5` — Same trained model in legacy HDF5 format for compatibility
 - `README.md` — Project documentation
