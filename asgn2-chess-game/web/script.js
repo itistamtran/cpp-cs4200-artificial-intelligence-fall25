@@ -132,9 +132,6 @@ async function loadMLModel() {
 
     // Show user-friendly message
     const errorMsg = document.createElement("div");
-    errorMsg.style.cssText =
-      "padding: 10px; margin: 10px 0; border-radius: 5px; font-size: 0.9em;";
-    errorMsg.innerHTML = `<strong>⚠️ Note:</strong> ML model could not be loaded. Using traditional evaluation instead.`;
     document
       .querySelector(".controls")
       .insertAdjacentElement("afterend", errorMsg);

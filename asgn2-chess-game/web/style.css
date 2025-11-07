@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 30px;
 }
 
 button,
@@ -54,7 +54,7 @@ h1 {
   text-align: center;
   color: #c5c5c5;
   font-size: 2em;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
@@ -128,7 +128,7 @@ div:has(button) {
 .game-area {
   display: flex;
   gap: 40px; /* spacing between left, center, right */
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* Chessboard area */
