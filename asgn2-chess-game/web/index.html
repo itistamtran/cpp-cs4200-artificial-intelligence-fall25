@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Game with ML Evaluation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>♔ Chess Game with ML ♚</h1>
+
+      <div class="controls">
+        <div class="control-group">
+          <label>Game Mode</label>
+          <select id="gameMode">
+            <option value="ai">vs AI</option>
+            <option value="2p">Two Players</option>
+          </select>
+        </div>
+
+        <div class="control-group" id="colorGroup">
+          <label>Your Color</label>
+          <select id="playerColor">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+          </select>
+        </div>
+
+        <div class="control-group" id="depthGroup">
+          <label>AI Depth</label>
+          <select id="aiDepth">
+            <option value="2">2 (Fast)</option>
+            <option value="3" selected>3 (Normal)</option>
+            <option value="4">4 (Strong)</option>
+            <option value="5">5 (Very Strong)</option>
+          </select>
+        </div>
+
+        <button id="startBtn">Start / Reset</button>
+        <button id="undoBtn">Undo</button>
+        <button id="flipBtn">Flip Board</button>
+      </div>
+
+      <div class="game-area">
+        <div class="board-container">
+          <div id="chessboard" class="chessboard"></div>
+        </div>
+
+        <div class="info-panel">
+          <div id="status" class="status">Click Start to begin</div>
+          <div class="moves-log">
+            <h3>Move History</h3>
+            <div id="movesLog"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="promotionDialog" class="promotion-dialog">
+      <h3>Choose Promotion Piece</h3>
+      <div class="promotion-pieces">
+        <div class="promotion-piece" data-piece="q">♕</div>
+        <div class="promotion-piece" data-piece="r">♖</div>
+        <div class="promotion-piece" data-piece="b">♗</div>
+        <div class="promotion-piece" data-piece="n">♘</div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.20.0/dist/tf.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
