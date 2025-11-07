@@ -14,6 +14,16 @@ The goal of this project is to replace the handcrafted evaluation functions of t
 - **Framework:** TensorFlow / Keras
 - **Goal:** Save the trained model and use it to evaluate positions within a chess-playing application
 
+## Chess Application Interface
+
+The trained model is integrated into a playable chess app that supports human vs AI gameplay with adjustable difficulty.
+
+### Example Interface
+
+[**Live web demo:**](https://itistamtran.github.io/cpp-cs4200-artificial-intelligence-fall25/asgn2-chess-game/web/index.html)
+
+![Chess Application Screenshot](images/chess_app.png)
+
 ## Dataset
 
 **Source:** [Chess Evaluations Dataset (Kaggle)](https://www.kaggle.com/datasets/ronakbadhe/chess-evaluations)  
@@ -102,14 +112,6 @@ Callbacks:
 | Test RMSE (centipawns) | 520.60     |
 | Max Samples            | 1,000,000  |
 | Input Shape            | (8, 8, 14) |
-
-## Chess Application Interface
-
-The trained model is integrated into a playable chess app that supports human vs AI gameplay with adjustable difficulty.
-
-### Example Interface
-
-![Chess Application Screenshot](images/chess_app.png)
 
 ## Files
 
