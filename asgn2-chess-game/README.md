@@ -108,8 +108,8 @@ Callbacks:
 
 | Metric                 | Value      |
 | ---------------------- | ---------- |
-| Test MSE (normalized)  | 0.030114   |
-| Test RMSE (centipawns) | 520.60     |
+| Test MSE (normalized)  | 0.014670   |
+| Test RMSE (centipawns) | 363.36     |
 | Max Samples            | 1,000,000  |
 | Input Shape            | (8, 8, 14) |
 
