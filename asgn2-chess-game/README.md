@@ -18,9 +18,9 @@ The goal of this project is to replace the handcrafted evaluation functions of t
 
 The trained model is integrated into a playable chess app that supports human vs AI gameplay with adjustable difficulty.
 
-### Example Interface
+[**Live web demo**](https://itistamtran.github.io/cpp-cs4200-artificial-intelligence-fall25/asgn2-chess-game/web/index.html)
 
-[**Live web demo:**](https://itistamtran.github.io/cpp-cs4200-artificial-intelligence-fall25/asgn2-chess-game/web/index.html)
+### Example Interface
 
 ![Chess Application Screenshot](images/chess_app.png)
 
