@@ -25,7 +25,10 @@ The course is taught by **Professor Hussain Zaidi**, Chief Solution Architect at
 - **Assignment 2:** Chess Game (AI Move Prediction, Minimax with Evaluation Function)
   - [Web Demo](https://itistamtran.github.io/cpp-cs4200-artificial-intelligence-fall25/asgn2-chess-game/web/index.html)
   - Jupyter Notebook version in `asgn2-chess-game/chess_minimax_ml.ipynb`
-- **Final Project:** Coming soon
+- **Final Project:** AI-powered resume matcher that analyzes resumes and job descriptions to find the best fit
+  - [Web Demo](https://resumejobmatch-ai.streamlit.app/)
+  - [GitHub Repo](https://github.com/itistamtran/resume_job_match)
+  - _Built with Streamlit • Powered by Sentence Transformers_
 
 ---
 
